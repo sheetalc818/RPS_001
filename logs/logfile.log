@@ -1,0 +1,68 @@
+INFO  | 2023-06-14 14:04:06 | [main] example.HelloWorld (HelloWorld.java:12) - Value of a = 10
+INFO  | 2023-06-14 14:04:06 | [main] example.HelloWorld (HelloWorld.java:14) - Value of b = 5
+INFO  | 2023-06-14 14:04:06 | [main] example.HelloWorld (HelloWorld.java:16) - Value of c is calculated!!
+INFO  | 2023-06-14 14:04:06 | [main] example.HelloWorld (HelloWorld.java:19) - Hello World!!will be printed in info level
+ERROR | 2023-06-14 14:04:06 | [main] example.HelloWorld (HelloWorld.java:20) - Hello World!!will be printed in error level
+FATAL | 2023-06-14 14:04:06 | [main] example.HelloWorld (HelloWorld.java:21) - Hello World!!will be printed in fatal level
+WARN  | 2023-06-14 14:04:06 | [main] example.HelloWorld (HelloWorld.java:22) - Hello World!!will be printed in warn level
+INFO  | 2023-06-14 14:08:16 | [main] example.Main (Main.java:11) - will be printed in debug level
+INFO  | 2023-06-14 14:22:59 | [main] example.HelloWorld (HelloWorld.java:12) - Value of a = 10
+INFO  | 2023-06-14 14:22:59 | [main] example.HelloWorld (HelloWorld.java:14) - Value of b = 5
+INFO  | 2023-06-14 14:22:59 | [main] example.HelloWorld (HelloWorld.java:16) - Value of c is calculated!!
+INFO  | 2023-06-14 14:22:59 | [main] example.HelloWorld (HelloWorld.java:19) - Hello World!!will be printed in info level
+ERROR | 2023-06-14 14:22:59 | [main] example.HelloWorld (HelloWorld.java:20) - Hello World!!will be printed in error level
+FATAL | 2023-06-14 14:22:59 | [main] example.HelloWorld (HelloWorld.java:21) - Hello World!!will be printed in fatal level
+WARN  | 2023-06-14 14:22:59 | [main] example.HelloWorld (HelloWorld.java:22) - Hello World!!will be printed in warn level
+INFO  | 2023-06-14 14:23:23 | [main] example.HelloWorld (HelloWorld.java:12) - Value of a = 10
+INFO  | 2023-06-14 14:23:23 | [main] example.HelloWorld (HelloWorld.java:14) - Value of b = 5
+INFO  | 2023-06-14 14:23:23 | [main] example.HelloWorld (HelloWorld.java:16) - Value of c is calculated!!
+INFO  | 2023-06-14 14:23:23 | [main] example.HelloWorld (HelloWorld.java:19) - Hello World!!will be printed in info level
+ERROR | 2023-06-14 14:23:23 | [main] example.HelloWorld (HelloWorld.java:20) - Hello World!!will be printed in error level
+FATAL | 2023-06-14 14:23:23 | [main] example.HelloWorld (HelloWorld.java:21) - Hello World!!will be printed in fatal level
+WARN  | 2023-06-14 14:23:23 | [main] example.HelloWorld (HelloWorld.java:22) - Hello World!!will be printed in warn level
+INFO  | 2023-06-15 11:12:04 | [main] example.HelloWorld (HelloWorld.java:11) - Value of a = 10
+INFO  | 2023-06-15 11:12:04 | [main] example.HelloWorld (HelloWorld.java:13) - Value of b = 5
+INFO  | 2023-06-15 11:12:04 | [main] example.HelloWorld (HelloWorld.java:15) - Value of c is calculated!!
+INFO  | 2023-06-15 11:12:04 | [main] example.HelloWorld (HelloWorld.java:18) - Hello World!!will be printed in info level
+ERROR | 2023-06-15 11:12:04 | [main] example.HelloWorld (HelloWorld.java:19) - Hello World!!will be printed in error level
+FATAL | 2023-06-15 11:12:04 | [main] example.HelloWorld (HelloWorld.java:20) - Hello World!!will be printed in fatal level
+WARN  | 2023-06-15 11:12:04 | [main] example.HelloWorld (HelloWorld.java:21) - Hello World!!will be printed in warn level
+INFO  | 2023-06-15 11:13:56 | [main] example.HelloWorld (HelloWorld.java:14) - Value of a = 10
+INFO  | 2023-06-15 11:13:56 | [main] example.HelloWorld (HelloWorld.java:16) - Value of b = 5
+INFO  | 2023-06-15 11:13:56 | [main] example.HelloWorld (HelloWorld.java:18) - Value of c is calculated!!
+INFO  | 2023-06-15 11:13:56 | [main] example.HelloWorld (HelloWorld.java:21) - Hello World!!will be printed in info level
+ERROR | 2023-06-15 11:13:56 | [main] example.HelloWorld (HelloWorld.java:22) - Hello World!!will be printed in error level
+FATAL | 2023-06-15 11:13:56 | [main] example.HelloWorld (HelloWorld.java:23) - Hello World!!will be printed in fatal level
+WARN  | 2023-06-15 11:13:56 | [main] example.HelloWorld (HelloWorld.java:24) - Hello World!!will be printed in warn level
+INFO  | 2023-06-15 11:16:26 | [main] example.HelloWorld (HelloWorld.java:16) - Value of a = 10
+INFO  | 2023-06-15 11:16:26 | [main] example.HelloWorld (HelloWorld.java:18) - Value of b = 5
+INFO  | 2023-06-15 11:16:26 | [main] example.HelloWorld (HelloWorld.java:20) - Value of c is calculated!!
+INFO  | 2023-06-15 11:16:26 | [main] example.HelloWorld (HelloWorld.java:23) - Hello World!!will be printed in info level
+ERROR | 2023-06-15 11:16:26 | [main] example.HelloWorld (HelloWorld.java:24) - Hello World!!will be printed in error level
+FATAL | 2023-06-15 11:16:26 | [main] example.HelloWorld (HelloWorld.java:25) - Hello World!!will be printed in fatal level
+WARN  | 2023-06-15 11:16:26 | [main] example.HelloWorld (HelloWorld.java:26) - Hello World!!will be printed in warn level
+WARN  | 2023-06-15 11:27:59 | [main] example.HelloWorld (HelloWorld.java:11) - test
+INFO  | 2023-06-15 11:27:59 | [main] example.HelloWorld (HelloWorld.java:17) - Value of a = 10
+INFO  | 2023-06-15 11:27:59 | [main] example.HelloWorld (HelloWorld.java:19) - Value of b = 5
+INFO  | 2023-06-15 11:27:59 | [main] example.HelloWorld (HelloWorld.java:21) - Value of c is calculated!!
+INFO  | 2023-06-15 11:27:59 | [main] example.HelloWorld (HelloWorld.java:24) - Hello World!!will be printed in info level
+ERROR | 2023-06-15 11:27:59 | [main] example.HelloWorld (HelloWorld.java:25) - Hello World!!will be printed in error level
+FATAL | 2023-06-15 11:27:59 | [main] example.HelloWorld (HelloWorld.java:26) - Hello World!!will be printed in fatal level
+WARN  | 2023-06-15 11:27:59 | [main] example.HelloWorld (HelloWorld.java:27) - Hello World!!will be printed in warn level
+INFO  | 2023-06-15 11:28:44 | [main] example.HelloWorld (HelloWorld.java:12) - Value of a = 10
+INFO  | 2023-06-15 11:28:44 | [main] example.HelloWorld (HelloWorld.java:14) - Value of b = 5
+INFO  | 2023-06-15 11:28:44 | [main] example.HelloWorld (HelloWorld.java:16) - Value of c is calculated!!
+INFO  | 2023-06-15 11:28:44 | [main] example.HelloWorld (HelloWorld.java:19) - Hello World!!will be printed in info level
+ERROR | 2023-06-15 11:28:44 | [main] example.HelloWorld (HelloWorld.java:20) - Hello World!!will be printed in error level
+FATAL | 2023-06-15 11:28:44 | [main] example.HelloWorld (HelloWorld.java:21) - Hello World!!will be printed in fatal level
+WARN  | 2023-06-15 11:28:44 | [main] example.HelloWorld (HelloWorld.java:22) - Hello World!!will be printed in warn level
+INFO  | 2023-06-15 11:28:53 | [main] example.HelloWorld (HelloWorld.java:12) - Value of a = 10
+INFO  | 2023-06-15 11:28:53 | [main] example.HelloWorld (HelloWorld.java:14) - Value of b = 5
+INFO  | 2023-06-15 11:28:53 | [main] example.HelloWorld (HelloWorld.java:16) - Value of c is calculated!!
+INFO  | 2023-06-15 11:28:53 | [main] example.HelloWorld (HelloWorld.java:19) - Hello World!!will be printed in info level
+ERROR | 2023-06-15 11:28:53 | [main] example.HelloWorld (HelloWorld.java:20) - Hello World!!will be printed in error level
+FATAL | 2023-06-15 11:28:53 | [main] example.HelloWorld (HelloWorld.java:21) - Hello World!!will be printed in fatal level
+WARN  | 2023-06-15 11:28:53 | [main] example.HelloWorld (HelloWorld.java:22) - Hello World!!will be printed in warn level
+INFO  | 2023-06-15 15:02:24 | [main] example.Main (Main.java:11) - will be printed in debug level
+INFO  | 2023-06-15 15:05:15 | [main] example.Main (Main.java:11) - will be printed in debug level
+INFO  | 2023-06-15 15:06:34 | [main] example.Main (Main.java:11) - will be printed in debug level
