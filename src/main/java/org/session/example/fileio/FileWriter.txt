@@ -1,0 +1,2 @@
+What is the ASCII character for 35?
+In the 7-bit ASCII character set, ASCII code 35 is represented by the character # also known as the number sign.

@@ -1,0 +1,1 @@
+ASCII stands for American Standard Code for Information Interchange. Below is the ASCII character table, including descriptions of the first 32 characters.
