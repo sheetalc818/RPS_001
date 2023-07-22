@@ -8,20 +8,6 @@ import java.util.Scanner;
 
 public class AddressBook extends InputMethods {
     public static Scanner scanner = new Scanner(System.in);
-    DataFile dataFile;
-    private List<Contacts> people;
-    public AddressBook(DataFile dataFile) {
-        scanner = new Scanner(System.in);
-        this.dataFile = dataFile;
-        try {
-            people = dataFile.loadAll();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-    public AddressBook(String fileName) {
-        this(new DataFile(fileName));
-    }
 
     public static void main(String[] args) {
         System.out.println("Welcome to the address Book Program!!");

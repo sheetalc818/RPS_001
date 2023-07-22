@@ -71,10 +71,10 @@ public class HashMapClass {
             System.out.println(entry.getKey()+ " Address Book :");
             for (int  i =0; i< entry.getValue().size(); i++){
                 System.out.println(entry.getValue().get(i).getFirstName()+ " "+
-                        entry.getValue().get(i).getSurname()+ " "+
+                        entry.getValue().get(i).getLastName()+ " "+
                         entry.getValue().get(i).getAddress()+ " "+
                         entry.getValue().get(i).getEmail()+ " "+
-                        entry.getValue().get(i).getPhoneNumber());
+                        entry.getValue().get(i).getPhoneNo());
             }
             System.out.println();
         }
@@ -116,10 +116,10 @@ public class HashMapClass {
             System.out.println(entry.getKey()+ " -> ");
             for (int i = 0; i<entry.getValue().size();i++){
                 System.out.println(entry.getValue().get(i).getFirstName()+ " "+
-                        entry.getValue().get(i).getSurname()+ " "+
+                        entry.getValue().get(i).getLastName()+ " "+
                         entry.getValue().get(i).getAddress()+ " "+
                         entry.getValue().get(i).getEmail()+ " "+
-                        entry.getValue().get(i).getPhoneNumber());
+                        entry.getValue().get(i).getPhoneNo());
             }
         }
     }

@@ -3,83 +3,104 @@ package org.AddressBook;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Contacts {
-    private static AtomicInteger nextID = new AtomicInteger(1);
+        String firstName;
+        String lastName;
+        String  address;
+        String city;
+        String state;
+        int zip;
+        int phoneNo;
+        String email;
+        public Contacts(){
 
-    private int id;
-    private String firstName;
-    private String surname;
-    private String phoneNumber;
-    private String email;
-    private String address;
+        }
 
-    Contacts(int id, String firstName, String surname, String phoneNumber, String email, String address) {
-        this.id = id;
-        this.firstName = firstName;
-        this.surname = surname;
-        this.phoneNumber = phoneNumber;
-        this.email = email;
-        this.address = address;
-    }
+        @Override
+        public String toString() {
+            return "Contacts{" +
+                    "firstName='" + firstName + '\'' +
+                    ", lastName='" + lastName + '\'' +
+                    ", address='" + address + '\'' +
+                    ", city='" + city + '\'' +
+                    ", state='" + state + '\'' +
+                    ", zip=" + zip +
+                    ", phoneNo=" + phoneNo +
+                    ", email='" + email + '\'' +
+                    '}';
+        }
 
-    Contacts(String firstName, String surname, String phoneNumber, String email, String address) {
-        this(nextID.getAndIncrement(), firstName, surname, phoneNumber, email, address);
-    }
+        public Contacts(String firstName, String lastName, String address, String city, String state, int zip, int phoneNo, String email) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.address = address;
+            this.city = city;
+            this.state = state;
+            this.zip = zip;
+            this.phoneNo = phoneNo;
+            this.email = email;
+        }
 
-    public Contacts() {
+        public String getFirstName() {
+            return firstName;
+        }
 
-    }
+        public void setFirstName(String firstName) {
+            this.firstName = firstName;
+        }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+        public String getLastName() {
+            return lastName;
+        }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
+        public void setLastName(String lastName) {
+            this.lastName = lastName;
+        }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
+        public String getAddress() {
+            return address;
+        }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
+        public void setAddress(String address) {
+            this.address = address;
+        }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+        public String getCity() {
+            return city;
+        }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
+        public void setCity(String city) {
+            this.city = city;
+        }
 
-    int getID() {
-        return id;
-    }
+        public String getState() {
+            return state;
+        }
 
-    String getFirstName() {
-        return firstName;
-    }
+        public void setState(String state) {
+            this.state = state;
+        }
 
-    String getSurname() {
-        return surname;
-    }
+        public int getZip() {
+            return zip;
+        }
 
-    String getPhoneNumber() {
-        return phoneNumber;
-    }
+        public void setZip(int zip) {
+            this.zip = zip;
+        }
 
-    String getEmail() {
-        return email;
-    }
+        public int getPhoneNo() {
+            return phoneNo;
+        }
 
-    String getAddress() {
-        return address;
-    }
+        public void setPhoneNo(int phoneNo) {
+            this.phoneNo = phoneNo;
+        }
 
-    @Override
-    public String toString() {
-        return "\n\nID: " + getID() + "\nName: " + getFirstName() + "\nSurname: " + getSurname() + "\nPhone number: " + getPhoneNumber() + "\nEmail: " +
-                getEmail() + "\nAddress: " + getAddress();
-    }
+        public String getEmail() {
+            return email;
+        }
+
+        public void setEmail(String email) {
+            this.email = email;
+        }
 }

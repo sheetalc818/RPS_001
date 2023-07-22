@@ -14,7 +14,7 @@ public class InputMethods {
             contacts.setFirstName(scanner.next());
 
             System.out.println("Enter person lastname : ");
-            contacts.setSurname(scanner.next());
+            contacts.setLastName(scanner.next());
 
             System.out.println("Enter  person address : ");
             contacts.setAddress(scanner.next());
@@ -24,8 +24,8 @@ public class InputMethods {
             contacts.setEmail(email);
 
             System.out.println("Enter person phoneNo : ");
-            String phoneNo = scanner.next();
-            contacts.setPhoneNumber(phoneNo);
+            int phoneNo = scanner.nextInt();
+            contacts.setPhoneNo(phoneNo);
 
             array.add(contacts);
             System.out.println("Do you want to add more person details[Yes/No]?");
@@ -36,10 +36,10 @@ public class InputMethods {
     public void print(ArrayList<Contacts> array) {
         System.out.println();
         System.out.println("*******Address Book************");
-//        for (int i = 0; i < array.size(); i++) {
-//            System.out.println(array.get(i).firstName + " " + array.get(i).lastName + " " + array.get(i).address + " "
-//                    + array.get(i).phoneNo + " " + array.get(i).state + " " + array.get(i).city + " " + array.get(i).zip);
-//        }
+        for (int i = 0; i < array.size(); i++) {
+            System.out.println(array.get(i).firstName + " " + array.get(i).lastName + " " + array.get(i).address + " "
+                    + array.get(i).phoneNo + " " + array.get(i).state + " " + array.get(i).city + " " + array.get(i).zip);
+        }
     }
 
     public void edit(ArrayList<Contacts> array) {
@@ -64,11 +64,11 @@ public class InputMethods {
                 System.out.println("whose lastname you want to Edit");
                 String oldLastname = scanner.next();
                 for (int j = 0; j < array.size(); j++) {
-//                    if (oldLastname.equals( array.get(j).getLastName())) {
-//                        System.out.println("enter new lastname :");
-//                        String newName = scanner.next();
-//                        array.get(j).setLastName(newName);
-//                    }
+                    if (oldLastname.equals( array.get(j).getLastName())) {
+                        System.out.println("enter new lastname :");
+                        String newName = scanner.next();
+                        array.get(j).setLastName(newName);
+                    }
                 }
                 System.out.println("Successfully done");
                 break;
@@ -103,10 +103,10 @@ public class InputMethods {
             }
         }
         System.out.println("After deletion");
-//        for (int i = 0; i < array.size(); i++) {
-//            System.out.println(array.get(i).firstName + " " + array.get(i).lastName + " " + array.get(i).address + " "
-//                    + array.get(i).phoneNo + " " + array.get(i).state + " " + array.get(i).city + " " + array.get(i).zip);
-//        }
+        for (int i = 0; i < array.size(); i++) {
+            System.out.println(array.get(i).firstName + " " + array.get(i).lastName + " " + array.get(i).address + " "
+                    + array.get(i).phoneNo + " " + array.get(i).state + " " + array.get(i).city + " " + array.get(i).zip);
+        }
     }
 
 }
