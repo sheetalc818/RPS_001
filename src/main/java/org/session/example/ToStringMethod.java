@@ -29,7 +29,6 @@ public class ToStringMethod {
     }
 
     public static void main(String[] args) {
-
         ToStringMethod toStringMethod = new ToStringMethod(100,"abc","Mumbai");
         ToStringMethod toStringMethod1 = new ToStringMethod(101,"abc1","Mumbai");
         ToStringMethod toStringMethod2 = new ToStringMethod(102,"abc1");
