@@ -1,6 +1,7 @@
 package org.session.example.stream;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -8,10 +9,10 @@ public class StreamDemo {
     public static void main(String[] args) {
         List<Product> productList = new ArrayList<>();
         productList.add(new Product(1,"Laptop : Dell",35000f));
-        productList.add(new Product(2,"Laptop : bag",2500f));
-        productList.add(new Product(3,"Water bottle",1000f));
         productList.add(new Product(4,"Book",500f));
         productList.add(new Product(5,"Laptop : HP",50000f));
+        productList.add(new Product(3,"Water bottle",1000f));
+        productList.add(new Product(2,"Laptop : Bag",2500f));
         productList.add(new Product(6,"Mobile cover",1000f));
 
         System.out.println(productList);
@@ -42,5 +43,19 @@ public class StreamDemo {
 
         Product productMin = productList.stream().min((product1,product2)->product1.price > product2.price ? 1 : -1).get();
         System.out.println("Product having minimum price : "+productMin);
+
+        List<String> sortedProductListByName = productList.stream().map(p->p.name).sorted().collect(Collectors.toList());
+        System.out.println("Natural sort Order name : "+sortedProductListByName);
+        //sortedProductListByName.forEach(System.out::println);
+
+        List<Integer> sortedProductList = productList.stream().map(p->p.id).sorted().collect(Collectors.toList());
+        System.out.println("Natural sort Order id : "+sortedProductList);
+        //sortedProductList.forEach(System.out::println);
+
+        List<String> sortedProductListByNameDesc = productList.stream().map(p->p.name).sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+        System.out.println("Reveres sort Order name : "+sortedProductListByNameDesc);
+
+        List<Integer> sortedProductListByIdDesc = productList.stream().map(p->p.id).sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+        System.out.println("Reveres sort Order id : "+sortedProductListByIdDesc);
     }
 }

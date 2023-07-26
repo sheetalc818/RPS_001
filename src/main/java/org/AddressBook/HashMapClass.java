@@ -1,12 +1,19 @@
 package org.AddressBook;
 
+import java.io.IOException;
 import java.util.*;
+import java.util.stream.Collectors;
+
+import static java.lang.System.exit;
+
 public class HashMapClass {
     Scanner scanner = new Scanner(System.in);
+    ArrayList<Contacts> array;
+    List<String> sortedContactArray;
     InputMethods inputMethods = new InputMethods();
-    public void addBook(HashMap<String, ArrayList<Contacts>> hashMap) {
+    public void addBook(HashMap<String, ArrayList<Contacts>> hashMap) throws IOException {
         InputMethods inputMethods = new InputMethods();
-        ArrayList<Contacts> array = new ArrayList<>();
+        array = new ArrayList<>();
         System.out.println("Enter name of the Address Book : ");
         String bookName = scanner.next();
         if (hashMap.containsKey(bookName)){
@@ -94,7 +101,7 @@ public class HashMapClass {
 
     public void searchBookWithName(HashMap<String, ArrayList<Contacts>> hashMap) {
         System.out.println("Enter the name you want to search : ");
-        String contactName = scanner.next();//Swapnil
+        String contactName = scanner.next();
         int count=0;
         for (Map.Entry<String, ArrayList<Contacts>> entry : hashMap.entrySet()){
             for(int i = 0; i< entry.getValue().size(); i++){
@@ -110,6 +117,14 @@ public class HashMapClass {
             System.out.println("Name "+contactName+ " does not exit");
         }
     }
+
+//    public List<String> sortByFirstName(HashMap<String, ArrayList<Contacts>> hashMap){
+//        for (Map.Entry<String,ArrayList<Contacts>> entry : hashMap.entrySet()) {
+//            sortedContactArray = array.stream().map(c -> c.firstName).sorted().collect(Collectors.toList());
+//            System.out.println("Reveres sort Order name : " + sortedContactArray);
+//        }
+//        return sortedContactArray;
+//    }
 
     public void printMap(HashMap<String, ArrayList<Contacts>> hashMap) {
         for (Map.Entry<String,ArrayList<Contacts>> entry : hashMap.entrySet()){

@@ -1,0 +1,23 @@
+[
+  {
+    "offices": [
+      "India,LA"
+    ],
+    "name": "Bridgelabz",
+    "employees": "3000"
+  },
+  {
+    "offices": [
+      "LA,CA,USA"
+    ],
+    "name": "Google",
+    "employees": "1000"
+  },
+  {
+    "offices": [
+      "CA,UK,USA"
+    ],
+    "name": "Microsoft",
+    "employees": "100"
+  }
+]

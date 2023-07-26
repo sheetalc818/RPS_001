@@ -1,15 +1,13 @@
 package org.AddressBook;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 public class Contacts {
         String firstName;
         String lastName;
         String  address;
         String city;
         String state;
-        int zip;
-        int phoneNo;
+        String zip;
+        String phoneNo;
         String email;
         public Contacts(){
 
@@ -29,7 +27,7 @@ public class Contacts {
                     '}';
         }
 
-        public Contacts(String firstName, String lastName, String address, String city, String state, int zip, int phoneNo, String email) {
+        public Contacts(String firstName, String lastName, String address, String city, String state, String zip, String phoneNo, String email) {
             this.firstName = firstName;
             this.lastName = lastName;
             this.address = address;
@@ -80,19 +78,17 @@ public class Contacts {
             this.state = state;
         }
 
-        public int getZip() {
-            return zip;
-        }
+        public String getZip() { return zip; }
 
-        public void setZip(int zip) {
+        public void setZip(String zip) {
             this.zip = zip;
         }
 
-        public int getPhoneNo() {
+        public String getPhoneNo() {
             return phoneNo;
         }
 
-        public void setPhoneNo(int phoneNo) {
+        public void setPhoneNo(String phoneNo) {
             this.phoneNo = phoneNo;
         }
 

@@ -1,12 +1,15 @@
 package org.AddressBook;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
+
+import static org.AddressBook.CsvWrite.writeContactInCSV;
 
 public class InputMethods {
     static Scanner scanner = new Scanner(System.in);
 
-    public void add(ArrayList<Contacts> array) {
+    public void add(ArrayList<Contacts> array) throws IOException {
         String option;
         do{
             Contacts contacts = new Contacts();
@@ -23,11 +26,24 @@ public class InputMethods {
             String email = scanner.next();
             contacts.setEmail(email);
 
+            System.out.println("Enter person city : ");
+            String city = scanner.next();
+            contacts.setCity(city);
+
             System.out.println("Enter person phoneNo : ");
-            int phoneNo = scanner.nextInt();
+            String phoneNo = scanner.next();
             contacts.setPhoneNo(phoneNo);
 
+            System.out.println("Enter person zip Code : ");
+            String zipCode = scanner.next();
+            contacts.setZip(zipCode);
+
+            System.out.println("Enter person state : ");
+            String state = scanner.next();
+            contacts.setState(state);
+
             array.add(contacts);
+            writeContactInCSV(array);
             System.out.println("Do you want to add more person details[Yes/No]?");
             option = scanner.next();
         }while (!option.equalsIgnoreCase("no"));
